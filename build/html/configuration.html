@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Configuration &#8212; Landons Project 2025 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=cb975c41"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Help" href="help.html" />
+    <link rel="prev" title="Setup" href="setup.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Landons Project 2025 documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support_us.html">Support Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo.html">Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changes</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h1>
+<section id="html-short-title">
+<h2><code class="docutils literal notranslate"><span class="pre">html_short_title</span></code><a class="headerlink" href="#html-short-title" title="Link to this heading">¶</a></h2>
+<p>If you have a really long project name, you may prefer something shorter to
+appear in the navigation bar. Specify this using <code class="docutils literal notranslate"><span class="pre">html_short_title</span></code> in
+<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="c1"># By default the project value is used in the nav bar.</span>
+<span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;My Extra Special Amazing Docs&#39;</span>
+
+<span class="c1"># If specified, this will be used in the nav bar instead.</span>
+<span class="n">html_short_title</span> <span class="o">=</span> <span class="s2">&quot;Amazing Docs&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="html-logo">
+<h2><code class="docutils literal notranslate"><span class="pre">html_logo</span></code><a class="headerlink" href="#html-logo" title="Link to this heading">¶</a></h2>
+<p>If you want to use a logo in the nav bar instead of text, specify <code class="docutils literal notranslate"><span class="pre">html_logo</span></code>
+in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="c1"># It can either be a path to an image, relative to conf.py:</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;./static/logo.png&#39;</span>
+
+<span class="c1"># Or it can be a URL:</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;https://awesome.com/static/logo.png&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="pygments-style">
+<span id="pygmentsstyle"></span><h2><code class="docutils literal notranslate"><span class="pre">pygments_style</span></code><a class="headerlink" href="#pygments-style" title="Link to this heading">¶</a></h2>
+<p>We use the <code class="docutils literal notranslate"><span class="pre">default</span></code> Pygments theme for syntax highlighting of code blocks.
+It gives good results out of the box (including great dark mode support).</p>
+<p>If you’d prefer to use a different Pygments style, you can specify it using
+<code class="docutils literal notranslate"><span class="pre">pygments_style</span></code> in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">pygments_style</span> <span class="o">=</span> <span class="s2">&quot;stata-dark&quot;</span>
+</pre></div>
+</div>
+<section id="dark-mode">
+<h3>Dark Mode<a class="headerlink" href="#dark-mode" title="Link to this heading">¶</a></h3>
+<p>When switching to dark mode, we automatically apply our own dark mode styles to
+code blocks. If you’d like to disable this behaviour, see <a class="reference internal" href="#darkmodecodeblocks"><span class="std std-ref">dark_mode_code_blocks</span></a>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="theme-specific">
+<h2>Theme specific<a class="headerlink" href="#theme-specific" title="Link to this heading">¶</a></h2>
+<section id="banner-text">
+<h3><code class="docutils literal notranslate"><span class="pre">banner_text</span></code><a class="headerlink" href="#banner-text" title="Link to this heading">¶</a></h3>
+<p>If this is provided then a banner is shown at the top of the page. It’s useful
+for important announcements.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Note how we can include links:</span>
+    <span class="s2">&quot;banner_text&quot;</span><span class="p">:</span> <span class="s1">&#39;We just launched a newletter, &lt;a href=&quot;https://mynewsletter.com/&quot;&gt;please subscribe&lt;/a&gt;!&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="banner-hiding">
+<h3><code class="docutils literal notranslate"><span class="pre">banner_hiding</span></code><a class="headerlink" href="#banner-hiding" title="Link to this heading">¶</a></h3>
+<p>This controls how the banner behaves when hidden. The options are
+<code class="docutils literal notranslate"><span class="pre">'temporary'</span></code> (the default) or <code class="docutils literal notranslate"><span class="pre">'permanent'</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">'temporary'</span></code>, when a user hides the banner they can still reopen it again.
+This is useful if you want to store important information in the banner, which
+the user may need to refer to again. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;banner_text&quot;</span><span class="p">:</span> <span class="s1">&#39;Please be aware of security issue XYZ!&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;banner_hiding&quot;</span><span class="p">:</span> <span class="s2">&quot;temporary&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>If <code class="docutils literal notranslate"><span class="pre">'permanent'</span></code>, when a user hides the banner it disappears permanently. This is
+useful when the banner contains information which the user is unlikely to
+need again. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;banner_text&quot;</span><span class="p">:</span> <span class="s1">&#39;Welcome to our amazing documentation!&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;banner_hiding&quot;</span><span class="p">:</span> <span class="s2">&quot;permanent&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you configure a different <code class="docutils literal notranslate"><span class="pre">banner_text</span></code> value in the future,
+then the banner will appear again, even if the user has previously hidden
+it.</p>
+</div>
+</section>
+<section id="dark-mode-code-blocks">
+<span id="darkmodecodeblocks"></span><h3><code class="docutils literal notranslate"><span class="pre">dark_mode_code_blocks</span></code><a class="headerlink" href="#dark-mode-code-blocks" title="Link to this heading">¶</a></h3>
+<p>When switching to dark mode, we apply our own custom CSS styles to code blocks.
+This gives a great dark mode experience out of the box.</p>
+<p>However, if you’ve specified a custom Pygments theme (see <a class="reference internal" href="#pygmentsstyle"><span class="std std-ref">pygments_style</span></a>),
+and you want to use that theme for both light mode and dark mode, you can
+disable our custom dark mode styles:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;dark_mode_code_blocks&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="globaltoc-collapse">
+<h3><code class="docutils literal notranslate"><span class="pre">globaltoc_collapse</span></code><a class="headerlink" href="#globaltoc-collapse" title="Link to this heading">¶</a></h3>
+<p>By default, the sidebar just shows the top level:</p>
+<a class="reference internal image-reference" href="static/sidebar/default.png"><img alt="static/sidebar/default.png" src="static/sidebar/default.png" style="width: 200px;" />
+</a>
+<p>When you click on an item, it shows the children:</p>
+<a class="reference internal image-reference" href="static/sidebar/clicked.png"><img alt="static/sidebar/clicked.png" src="static/sidebar/clicked.png" style="width: 200px;" />
+</a>
+<p>If you want the children to be visible at all times, you can do so as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;globaltoc_collapse&quot;</span><span class="p">:</span> <span class="kc">False</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>It will then look something like this:</p>
+<a class="reference internal image-reference" href="static/sidebar/expanded.png"><img alt="static/sidebar/expanded.png" src="static/sidebar/expanded.png" style="width: 200px;" />
+</a>
+</section>
+<section id="show-theme-credit">
+<h3><code class="docutils literal notranslate"><span class="pre">show_theme_credit</span></code><a class="headerlink" href="#show-theme-credit" title="Link to this heading">¶</a></h3>
+<p>At the bottom of the page is a very small link which says <code class="docutils literal notranslate"><span class="pre">Styled</span> <span class="pre">using</span> <span class="pre">the</span> <span class="pre">Piccolo</span> <span class="pre">Theme</span></code>.</p>
+<p>This helps grow awareness of the project, and attract new contributors.</p>
+<p>You can hide this if required:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;show_theme_credit&quot;</span><span class="p">:</span> <span class="kc">False</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>If hiding it, please consider <a class="reference internal" href="support_us.html#supportus"><span class="std std-ref">supporting us</span></a> in a different way.</p>
+</section>
+<section id="source-url">
+<h3><code class="docutils literal notranslate"><span class="pre">source_url</span></code><a class="headerlink" href="#source-url" title="Link to this heading">¶</a></h3>
+<p>If specified, a link is shown in the nav bar to the source code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;source_url&quot;</span><span class="p">:</span> <span class="s1">&#39;https://github.com/piccolo-orm/piccolo_theme/&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>We try and detect if the URL points to GitHub or GitLab, and show the correct
+icon. However, if you’re using a self hosted version of GitHub or GitLab on a
+custom URL, you can explicitly tell the theme which icon to use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;source_url&quot;</span><span class="p">:</span> <span class="s1">&#39;https://self-hosted.foo.com/&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;source_icon&quot;</span><span class="p">:</span> <span class="s2">&quot;gitlab&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The available options for <code class="docutils literal notranslate"><span class="pre">source_icon</span></code> are:</p>
+<ul class="simple">
+<li><p>generic</p></li>
+<li><p>github</p></li>
+<li><p>gitlab</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Configuration</a><ul>
+<li><a class="reference internal" href="#html-short-title"><code class="docutils literal notranslate"><span class="pre">html_short_title</span></code></a></li>
+<li><a class="reference internal" href="#html-logo"><code class="docutils literal notranslate"><span class="pre">html_logo</span></code></a></li>
+<li><a class="reference internal" href="#pygments-style"><code class="docutils literal notranslate"><span class="pre">pygments_style</span></code></a><ul>
+<li><a class="reference internal" href="#dark-mode">Dark Mode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#theme-specific">Theme specific</a><ul>
+<li><a class="reference internal" href="#banner-text"><code class="docutils literal notranslate"><span class="pre">banner_text</span></code></a></li>
+<li><a class="reference internal" href="#banner-hiding"><code class="docutils literal notranslate"><span class="pre">banner_hiding</span></code></a></li>
+<li><a class="reference internal" href="#dark-mode-code-blocks"><code class="docutils literal notranslate"><span class="pre">dark_mode_code_blocks</span></code></a></li>
+<li><a class="reference internal" href="#globaltoc-collapse"><code class="docutils literal notranslate"><span class="pre">globaltoc_collapse</span></code></a></li>
+<li><a class="reference internal" href="#show-theme-credit"><code class="docutils literal notranslate"><span class="pre">show_theme_credit</span></code></a></li>
+<li><a class="reference internal" href="#source-url"><code class="docutils literal notranslate"><span class="pre">source_url</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="setup.html">
+                    <span class="icon">&lt;</span><span>Setup</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="help.html"><span>Help</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Landon Coonrod.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

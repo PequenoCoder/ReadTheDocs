@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Changes &#8212; Landons Project 2025 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=cb975c41"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Demo" href="demo.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Landons Project 2025 documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support_us.html">Support Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo.html">Demo</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changes</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="changes">
+<h1>Changes<a class="headerlink" href="#changes" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>0.24.0<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>Improved the colours used for syntax highlighting whilst in dark mode (one of
+the blue colours was too dark). Thanks to &#64;superstes for reporting this issue.</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>0.23.0<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<p>Fixing some style issues in the search results page in Sphinx 7.3.x.</p>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h2>0.22.0<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<p>Fixed a styling issue with the searchbox in Sphinx 7.3.x. Thanks to &#64;heuer for
+reporting this issue.</p>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h2>0.21.0<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<p>Allow <a class="reference external" href="https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-j">parallel builds</a>.</p>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h2>0.20.0<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<p>Added additional ordered list styles - thanks to &#64;fizbin for reporting this.</p>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h2>0.19.0<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<p>Fixed span tags (thanks to &#64;jvcarli for this).</p>
+<p>Added support for Python 3.12.</p>
+</section>
+<hr class="docutils" />
+<section id="id7">
+<h2>0.18.0<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<p>Added <code class="docutils literal notranslate"><span class="pre">z-index</span></code> for the left sidebar on mobile.</p>
+</section>
+<hr class="docutils" />
+<section id="id8">
+<h2>0.17.0<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<p>Fixes to support Sphinx 7.2. Thanks to &#64;alexlancaster for reporting this.</p>
+</section>
+<hr class="docutils" />
+<section id="id9">
+<h2>0.16.1<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<p>Bundling the Roboto Mono bold-italic font with the theme, as it’s used in
+some code blocks. Thanks to &#64;noxpardalis for adding this.</p>
+</section>
+<hr class="docutils" />
+<section id="id10">
+<h2>0.16.0<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<p>The custom fonts are now bundled with the theme. Thanks to &#64;noxpardalis for
+this.</p>
+</section>
+<hr class="docutils" />
+<section id="id11">
+<h2>0.15.0<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<p>Improved the colours used for showing emphasis in code blocks in dark mode.</p>
+<p>Made some minor fixes to the HTML templates.</p>
+</section>
+<hr class="docutils" />
+<section id="id12">
+<h2>0.14.0<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+<p>When switching to dark mode, we automatically apply our own custom dark mode
+styles to code blocks.</p>
+<p>This gives a great experience out of the box. However, if someone uses their
+own Pygments theme, they might want to use that theme in both light mode, and
+dark mode. They can now do so, using the <code class="docutils literal notranslate"><span class="pre">dark_mode_code_blocks</span></code> option.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;dark_mode_code_blocks&quot;</span><span class="p">:</span> <span class="kc">False</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="id13">
+<h2>0.13.0<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+<p>A logo can now be used in the nav bar, instead of text.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="c1"># Relative to conf.py:</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;./path/to/logo.png&#39;</span>
+
+<span class="c1"># Or an absolute URL:</span>
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;https://awesome.com/static/logo.png&#39;</span>
+</pre></div>
+</div>
+<p>Thanks to &#64;are-scenic for adding this.</p>
+</section>
+<hr class="docutils" />
+<section id="id14">
+<h2>0.12.0<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h2>
+<p>You can now specify the source code URL, and it will show in the nav bar.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;source_url&quot;</span><span class="p">:</span> <span class="s1">&#39;https://github.com/piccolo-orm/piccolo_theme/&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The icon is inferred automatically based on the URL (in the above example, we
+show the GitHub logo). You can explicitly set the icon if you prefer:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;source_url&quot;</span><span class="p">:</span> <span class="s1">&#39;https://self-hosted.foo.com/&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;source_icon&quot;</span><span class="p">:</span> <span class="s2">&quot;gitlab&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="id15">
+<h2>0.11.1<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h2>
+<p>Minor style fix on search page.</p>
+</section>
+<hr class="docutils" />
+<section id="id16">
+<h2>0.11.0<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h2>
+<p>Fixed some styles in Sphinx v5.</p>
+</section>
+<hr class="docutils" />
+<section id="id17">
+<h2>0.10.2<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h2>
+<p>Drop Python 3.7 specific syntax.</p>
+</section>
+<hr class="docutils" />
+<section id="id18">
+<h2>0.10.1<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h2>
+<p>Fix typo in <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>.</p>
+</section>
+<hr class="docutils" />
+<section id="id19">
+<h2>0.10.0<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h2>
+<p>Added support for Python 3.6, as many Ubuntu systems will still be using that
+version, and Sphinx still supports it. Thanks to &#64;oncilla for reporting this
+issue.</p>
+</section>
+<hr class="docutils" />
+<section id="id20">
+<h2>0.9.0<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h2>
+<p>Improved the appearance of autodoc output for C files (when using
+<a class="reference external" href="https://breathe.readthedocs.io/en/latest/">breathe</a>). Courtesy &#64;thijsmie.</p>
+</section>
+<hr class="docutils" />
+<section id="id21">
+<h2>0.8.1<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h2>
+<p>Changed the arrow symbols - they didn’t look great on mobile.</p>
+</section>
+<hr class="docutils" />
+<section id="id22">
+<h2>0.8.0<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h2>
+<p>Added spacing between sections, so it’s not necessary to add horizontal
+dividers any more.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">My Heading</span>
+<span class="gh">==========</span>
+
+<span class="gh">Section 1</span>
+<span class="gh">---------</span>
+
+Some content
+
+-------------------------------------------
+
+<span class="gh">Section 2</span>
+<span class="gh">---------</span>
+
+Some content
+</pre></div>
+</div>
+<p>We can now just do:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">My Heading</span>
+<span class="gh">==========</span>
+
+<span class="gh">Section 1</span>
+<span class="gh">---------</span>
+
+Some content
+
+
+<span class="gh">Section 2</span>
+<span class="gh">---------</span>
+
+Some content
+</pre></div>
+</div>
+<p>Other minor changes:</p>
+<ul class="simple">
+<li><p>Using unicode triangle character instead of &lt; for some links</p></li>
+<li><p>Plain admonitions are now styled properly:</p></li>
+</ul>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">admonition</span><span class="p">::</span> A custom admonition
+
+   This is my custom admonition!
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="id23">
+<h2>0.7.1<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h2>
+<p>Improvements to the notification feature - it was causing too many browser
+reflow operations.</p>
+</section>
+<hr class="docutils" />
+<section id="id24">
+<h2>0.7.0<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h2>
+<p>A notification can now be shown at the top of each page.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;banner_text&quot;</span><span class="p">:</span> <span class="s1">&#39;Welcome to our amazing documentation!&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;banner_hiding&quot;</span><span class="p">:</span> <span class="s2">&quot;permanent&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This involved quite a few CSS changes - please clear your browser cache if
+anything appears broken.</p>
+</section>
+<hr class="docutils" />
+<section id="id25">
+<h2>0.6.0<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h2>
+<p>If <code class="docutils literal notranslate"><span class="pre">html_short_title</span></code> is in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> then this is used in the nav bar
+instead of the full project title.</p>
+</section>
+<hr class="docutils" />
+<section id="id26">
+<h2>0.5.1<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h2>
+<p>Fixed dark mode styles - some elements weren’t visible. Thanks to &#64;alorence for
+reporting this issue.</p>
+</section>
+<hr class="docutils" />
+<section id="id27">
+<h2>0.5.0<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h2>
+<p>Added table styles.</p>
+</section>
+<hr class="docutils" />
+<section id="id28">
+<h2>0.4.0<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h2>
+<p>Improved the appearance of autodoc output for C++ files (when using
+<a class="reference external" href="https://breathe.readthedocs.io/en/latest/">breathe</a>). Courtesy &#64;thijsmie.</p>
+</section>
+<hr class="docutils" />
+<section id="id30">
+<h2>0.3.0<a class="headerlink" href="#id30" title="Link to this heading">¶</a></h2>
+<p>Added dark mode.</p>
+</section>
+<hr class="docutils" />
+<section id="id31">
+<h2>0.2.5<a class="headerlink" href="#id31" title="Link to this heading">¶</a></h2>
+<p>Improved search styles.</p>
+</section>
+<hr class="docutils" />
+<section id="id32">
+<h2>0.2.4<a class="headerlink" href="#id32" title="Link to this heading">¶</a></h2>
+<p>Added missing <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file to manifest. Thanks to &#64;moorepants for
+reporting this.</p>
+</section>
+<hr class="docutils" />
+<section id="id33">
+<h2>0.2.3<a class="headerlink" href="#id33" title="Link to this heading">¶</a></h2>
+<p>Make the <code class="docutils literal notranslate"><span class="pre">page</span> <span class="pre">contents</span></code> text smaller when the right hand sidebar is hidden.</p>
+</section>
+<hr class="docutils" />
+<section id="id34">
+<h2>0.2.2<a class="headerlink" href="#id34" title="Link to this heading">¶</a></h2>
+<p>Fix missing static files.</p>
+</section>
+<hr class="docutils" />
+<section id="id35">
+<h2>0.2.1<a class="headerlink" href="#id35" title="Link to this heading">¶</a></h2>
+<p>Fix missing static files.</p>
+</section>
+<hr class="docutils" />
+<section id="id36">
+<h2>0.2.0<a class="headerlink" href="#id36" title="Link to this heading">¶</a></h2>
+<p>Improved the main header on mobile - the search bar is replaced with a search
+icon. Also increased the size of the touch targets for showing / hiding the
+right sidebar, for easier use on mobile. See <a class="reference external" href="https://github.com/piccolo-orm/piccolo_theme/pull/7">PR 7</a>.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Changes</a><ul>
+<li><a class="reference internal" href="#id1">0.24.0</a></li>
+<li><a class="reference internal" href="#id2">0.23.0</a></li>
+<li><a class="reference internal" href="#id3">0.22.0</a></li>
+<li><a class="reference internal" href="#id4">0.21.0</a></li>
+<li><a class="reference internal" href="#id5">0.20.0</a></li>
+<li><a class="reference internal" href="#id6">0.19.0</a></li>
+<li><a class="reference internal" href="#id7">0.18.0</a></li>
+<li><a class="reference internal" href="#id8">0.17.0</a></li>
+<li><a class="reference internal" href="#id9">0.16.1</a></li>
+<li><a class="reference internal" href="#id10">0.16.0</a></li>
+<li><a class="reference internal" href="#id11">0.15.0</a></li>
+<li><a class="reference internal" href="#id12">0.14.0</a></li>
+<li><a class="reference internal" href="#id13">0.13.0</a></li>
+<li><a class="reference internal" href="#id14">0.12.0</a></li>
+<li><a class="reference internal" href="#id15">0.11.1</a></li>
+<li><a class="reference internal" href="#id16">0.11.0</a></li>
+<li><a class="reference internal" href="#id17">0.10.2</a></li>
+<li><a class="reference internal" href="#id18">0.10.1</a></li>
+<li><a class="reference internal" href="#id19">0.10.0</a></li>
+<li><a class="reference internal" href="#id20">0.9.0</a></li>
+<li><a class="reference internal" href="#id21">0.8.1</a></li>
+<li><a class="reference internal" href="#id22">0.8.0</a></li>
+<li><a class="reference internal" href="#id23">0.7.1</a></li>
+<li><a class="reference internal" href="#id24">0.7.0</a></li>
+<li><a class="reference internal" href="#id25">0.6.0</a></li>
+<li><a class="reference internal" href="#id26">0.5.1</a></li>
+<li><a class="reference internal" href="#id27">0.5.0</a></li>
+<li><a class="reference internal" href="#id28">0.4.0</a></li>
+<li><a class="reference internal" href="#id30">0.3.0</a></li>
+<li><a class="reference internal" href="#id31">0.2.5</a></li>
+<li><a class="reference internal" href="#id32">0.2.4</a></li>
+<li><a class="reference internal" href="#id33">0.2.3</a></li>
+<li><a class="reference internal" href="#id34">0.2.2</a></li>
+<li><a class="reference internal" href="#id35">0.2.1</a></li>
+<li><a class="reference internal" href="#id36">0.2.0</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="demo.html">
+                    <span class="icon">&lt;</span><span>Demo</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Landon Coonrod.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>
