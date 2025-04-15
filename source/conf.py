@@ -1,8 +1,4 @@
-import datetime
-import os
-import sys
-import sphinx
-sys.path.insert(0, os.path.abspath('../..'))
+import piccolo_theme  # This import may help, but isn't strictly required.
 
 # Configuration file for the Sphinx documentation builder.
 #
